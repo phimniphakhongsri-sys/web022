@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บ้านสวนคาเฟ่ - บรรยากาศภายในร้าน</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: #fcfbf7;
+            color: #333;
+        }
+
+        /* Header Layout using Table */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            padding: 0.8rem 5%;
+        }
+
+        .nav-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2d5a27;
+            cursor: pointer;
+        }
+
+        .nav-menu-table {
+            border-collapse: collapse;
+            margin-left: auto;
+        }
+
+        .nav-menu-table td {
+            padding: 0 1rem;
+        }
+
+        .nav-menu-table span {
+            color: #333;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .nav-menu-table span:hover {
+            color: #2d5a27;
+        }
+
+        /* Atmosphere Section Layout using Table */
+        .atmos-container {
+            padding: 7rem 5% 4rem;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            color: #2d5a27;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-subtitle {
+            color: #666;
+            margin-bottom: 2.5rem;
+        }
+
+        .atmos-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 20px;
+            margin-bottom: 2rem;
+        }
+
+        .atmos-card {
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            vertical-align: top;
+            width: 33.33%;
+        }
+
+        .atmos-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .atmos-info {
+            padding: 1.2rem;
+            text-align: left;
+        }
+
+        .atmos-info h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.4rem;
+            color: #2d5a27;
+        }
+
+        .atmos-info p {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu-table { display: none; }
+            .atmos-table, .atmos-table tr, .atmos-card {
+                display: block;
+                width: 100%;
+                border-spacing: 0;
+                margin-bottom: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header (ใช้ตาราง Table และ tr/td แทน nav) -->
+    <header>
+        <table class="nav-table">
+            <tr>
+                <td style="text-align: left;">
+                    <span class="logo">บ้านสวนคาเฟ่</span>
+                </td>
+                <td style="text-align: right;">
+                    <table class="nav-menu-table">
+                        <tr>
+                            <td><span>หน้าแรก</span></td>
+                            <td><span>บรรยากาศ</span></td>
+                            <td><span>เมนูน้ำ</span></td>
+                            <td><span>เมนูของหวาน</span></td>
+			        <td><span>เมนูแนะนำ</span></td> 	 	   	        <td><span>ติดต่อเรา</span></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <!-- ส่วนเนื้อหาหน้าบรรยากาศ -->
+    <div class="atmos-container">
+        <h2 class="section-title">บรรยากาศรอบๆ บ้านสวนคาเฟ่</h2>
+        <p class="section-subtitle">สัมผัสความร่มรื่นของธรรมชาติ มุมถ่ายรูปสุดชิล และความอบอุ่นผ่อนคลาย</p>
+
+        <!-- แถวที่ 1 ของรูปภาพบรรยากาศ -->
+        <table class="atmos-table">
+            <tr>
+                <td class="atmos-card">
+                    <img src="images/898.jpg" alt="โซนสวนดอกไม้"width ="100% height="150>
+			<div class="atmos-info">
+                        <h3>โซนสวนดอกไม้และธรรมชาติ</h3>
+                        <p>รายล้อมด้วยพรรณไม้นานาพรรณและดอกไม้หลากสีสัน ให้ความรู้สึกสดชื่นทุกครั้งที่มาเยือน</p>
+                    </div>
+                </td>
+                <td class="atmos-card">
+                    <img src="images/4455.jpg" class="atmos-img" alt="มุมนั่งเล่นใต้ต้นไม้ใหญ่"width ="100% height="150>
+
+                    <div class="atmos-info">
+                        <h3>มุมนั่งเล่นใต้ร่มไม้ใหญ่</h3>
+                        <p>โต๊ะไม้ท่ามกลางร่มเงาไม้ใหญ่ รับลมเย็นสบาย เหมาะสำหรับการนั่งพักผ่อนคุยกับเพื่อนฝูง</p>
+                    </div>
+                </td>
+                <td class="atmos-card">
+                    <img src="images/877.jpg" alt="โซนคาเฟ่ในร่ม"width ="100% height="150>
+			<div class="atmos-info">
+                        <h3>โซนห้องกระจกโฮมี่</h3>
+                        <p>ตัวร้านสไตล์บ้านไม้และกระจกใส มองเห็นวิวสวนได้รอบทิศทาง แอร์เย็นฉ่ำนั่งสบาย</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
